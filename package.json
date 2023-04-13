@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "@expo/websql": "^1.0.1",
-    "@farjs/better-sqlite3-wrapper": "^1.0.0"
+    "@farjs/better-sqlite3-wrapper": "^1.0.1"
   }
 }

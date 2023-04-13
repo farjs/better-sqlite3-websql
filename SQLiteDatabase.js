@@ -7,7 +7,6 @@ const READ_ONLY_ERROR = new Error('could not prepare statement (23 not authorize
   
 function SQLiteDatabase(name) {
     const db = new Database(name);
-    db.pragma('journal_mode = WAL');
     db._lastInsertRowIdQuery = db.prepare("SELECT last_insert_rowid() AS id;");
     db._changesQuery = db.prepare("SELECT changes() AS changes;");
     this._db = db;
