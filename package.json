@@ -6,7 +6,6 @@
     "url": "git+https://github.com/farjs/better-sqlite3-websql.git"
   },
   "author": "viktor-podzigun",
-  "private": false,
   "description": "Cross-runtime implementation of WebSql api backed by better-sqlite3 and bun:sqlite",
   "license": "MIT",
   "bugs": {
@@ -26,13 +25,17 @@
   ],
   "main": "./index.js",
   "exports": "./index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "browserslist": "maintained node versions",
   "engines": {
-    "node": ">=14.21.1",
-    "bun": ">=0.5.8"
+    "node": ">=18",
+    "bun": ">=0.8"
   },
   "dependencies": {
     "@expo/websql": "^1.0.1",
-    "@farjs/better-sqlite3-wrapper": "^1.0.1"
+    "@farjs/better-sqlite3-wrapper": "^2.0.0"
   }
 }
